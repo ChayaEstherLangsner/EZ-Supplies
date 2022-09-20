@@ -1,11 +1,12 @@
 /*
+
 Our company name is EZ Supplies.
 We are a distributer of printing supplies to printing shops since 1980.
 We are working on expanding our business, we want to be every printing shop's main supplier.
-In order to buy from us you need to open an account. 
+It is necessary to open an account to purchase from us. 
 We want to keep track of all our customers that have accounts with us, to know if they are growing customers and if they are up to date on payment.
 
-We want to know  about each customer 
+What we want to know about each customer 
 	- Name of customer's shop
 	- Contact name- how ever customer wants to be called, first and last name, just first name, just last name…
 	- Address, split up into street, city, state, zip 
