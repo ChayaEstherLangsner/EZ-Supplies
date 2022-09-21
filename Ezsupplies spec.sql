@@ -8,7 +8,8 @@ We want to keep track of all our customers that have accounts with us, to know i
 
 What we want to know about each customer 
 	- Name of customer's shop
-	- Contact name- how ever customer wants to be called, first and last name, just first name, just last name…
+	- Contact first name
+	- Contact last name
 	- Address, split up into street, city, state, zip 
 	- Phone number 
 	- Year customer's account was created 
@@ -53,12 +54,12 @@ Reports:
 	3) Show us the total amount of sales per year, per State (2022, what we have so far), excluding customers that owe more than 30,000 and are COD
 	
 Sample Data:
-Printing Plus, Josh, 46 Cross St. Jackson Township NJ, 08527, 732-227-5897, 2005, $20,000, $7,000, COD, 15000
-Excellent Printing, Mr. Smith, 52 Main Ave, Passaic, NJ, 07055, 973-556-9999, 2020, $250,000, $375,000, Net 60, $400,000
+Printing Plus, Josh Kushner 46 Cross St. Jackson Township NJ, 08527, 732-227-5897, 2005, $20,000, $7,000, COD, 15000
+Excellent Printing, Donald Smith, 52 Main Ave, Passaic, NJ, 07055, 973-556-9999, 2020, $250,000, $375,000, Net 60, $400,000
 Universal Printing, James Martinis, 3506 Edwin St, Silver Spring, MD, 20902, 240-562-9856, 1999, $75,000, $78,000, COD,$153,000
 Better Graphics and Printing, Kim Kimberly, 265 W 37th, New York, NY 10018, 646-441-1236, 2006, $60,000, $80,000, Net 15, $200,000
-City Printing, Schwartz, 2974 John F. Kennedy Blvd, Jersey City, NJ 07306, 201-456-7412, 2000, $250, $700, Net 30, $250
+City Printing,Chaim Schwartz, 2974 John F. Kennedy Blvd, Jersey City, NJ 07306, 201-456-7412, 2000, $250, $700, Net 30, $250
 Unique Print, Mark Turner, 3819 24th St, Long Island City, NY 11101, 718-232-3699, 1981, $90,000, $110,000, COD, $150,000
-Print Easy, John, 27 Orchard St, Monsey, NY 10952, 845-761-1123, 2003, $20,000, $30,000, COD, 50,000
+Print Easy, Steve Smith , 27 Orchard St, Monsey, NY 10952, 845-761-1123, 2003, $20,000, $30,000, COD, 50,000
 	
 */
