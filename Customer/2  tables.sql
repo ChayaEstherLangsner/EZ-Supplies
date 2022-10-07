@@ -10,7 +10,7 @@ create table dbo.Customer(
     StreetAddress varchar(50) not null constraint ck_Customer_StreetAddress_cannot_be_blank check(StreetAddress <> ''),
     City varchar(30) not null constraint ck_Customer_City_cannot_be_blank check(City <> ''),
     StateCode char(2) not null constraint ck_Customer_StateCode_cannot_be_either_NJ_NY_MD_or_PA check(StateCode in ('NJ', 'NY', 'MD', 'PA')),
---cel why varchar of 10 if only delivering to NY, NY, MD, PA 
+--cel why varchar of 10 if only delivering to NY, NY, MD, PA  
     Zip varchar(10) not null constraint ck_Customer_Zip_must_be_between_5_and_10_digits check(len(Zip) between 5 and 10),
     PhoneNumber varchar(15) not null constraint ck_Customer_PhoneNumber_must_be_between_10_and_15_digits check(len(PhoneNumber) between 10 and 15),
     YearCreated int not null constraint ck_Customer_YearCreated_must_be_greater_than_or_equal_to_1980 check(YearCreated >= 1980),

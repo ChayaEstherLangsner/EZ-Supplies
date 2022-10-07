@@ -5,7 +5,7 @@
 select ShopName = case
                      when c.AmountPurchased2022 - c.AmountPurchased2021 < 1000 then concat(c.ShopName, ' "Red Flag"') 
                      else c.ShopName 
-                  end
+                  end 
 from customer c
 --cel should be amt purchased - total paid, not the other way around, and it's only if their terms are COD
 --Customers that owe $10,000 or more and are COD, should have the words 'Credit Hold' instead of their address displayed, this is because we can't deliver to them until they pay what they owe.
