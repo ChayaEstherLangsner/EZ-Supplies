@@ -11,4 +11,4 @@ union select 'City Printing', 'Chaim', 'Schwartz', '2974 John F. Kennedy Blvd', 
 union select 'Unique Print', 'Mark', 'Turner', '3819 24th St', 'Long Island City', 'NY', '11101', '718-232-3699', 1981, 90000, 110000, 'COD', 150000
 union select 'Print Easy', 'Steve', 'Smith', '27 Orchard St', 'Monsey', 'NY', '10952', '845-761-1123', '2003', 20000, 30000, 'COD', 50000
 go
-select * from Customer 
+select * from Customer  
