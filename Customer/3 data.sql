@@ -12,3 +12,4 @@ union select 'Unique Print', 'Mark', 'Turner', '3819 24th St', 'Long Island City
 union select 'Print Easy', 'Steve', 'Smith', '27 Orchard St', 'Monsey', 'NY', '10952', '845-761-1123', '2003', 20000, 30000, 'COD', 50000
 go
 select * from Customer  
+

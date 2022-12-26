@@ -22,11 +22,10 @@ where c.Terms = 'COD'
 --Please add a growing/dropping column calculating if each customer is growing based on the amount purchased per month in 2021 vs 2022, For 2021, divide the year sales into 12 to get the total per month and for 2022, which ever month you are in when entering this data is the amount you should divide the sales by. 
 --Because of inflation in order to be considered growing they need to have at least a 10% increase per month. 
 --cel if it's 'c.AmountPurchased2022 / 10' then it will always only calculate it to be in the month of October 
---AS Didn't you say: and for 2022, which ever month you are in when entering this data is the amount you should divide the sales by. 
 --cel the 10% increase should be for 2022 
 select 'Growing/Dropping' = 
     case 
-        when (1.1 * (c.AmountPurchased2022 / 10)) >= (c.AmountPurchased2021 / 12) then 'Growing' 
+        when (1.1 * (c.AmountPurchased2022 / datepart(month, getdate()))) >= (c.AmountPurchased2021 / 12) then 'Growing' 
         else 'Dropping' 
     end, CustomerName = concat(c.FirstName, ' ', c.LastName)
 from customer c

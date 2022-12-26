@@ -28,3 +28,5 @@ create table dbo.Customer(
     constraint u_Customer_CustomerCode unique
 )
 go
+
+
