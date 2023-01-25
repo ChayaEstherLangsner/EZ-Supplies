@@ -44,13 +44,13 @@ from customer c
 --cel it should be EXcluding any customers that owe more than 30,000 and are COD, show each states sales(meaning amount purchased) for the year
 select TotalSales2022 = sum(c.AmountPurchased2022), c.StateCode
 from customer c
-where (c.TotalPaid - c.AmountPurchased2022) > 30000
+where ((c.AmountPurchased2021 + c.AmountPurchased2022) - c.TotalPaid) <= 30000
 and Terms <> 'COD'
 group by c.StateCode
 
 select TotalSales2021 = sum(c.AmountPurchased2021), c.StateCode
 from customer c
-where (c.TotalPaid - c.AmountPurchased2021) > 30000
+where ((c.AmountPurchased2021 + c.AmountPurchased2022) - c.TotalPaid) <= 30000
 and Terms <> 'COD'
 group by c.StateCode
 
